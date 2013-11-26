@@ -66,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5z-CZ-ohO">
-                                <rect key="frame" x="145" y="214" width="33" height="30"/>
+                                <rect key="frame" x="144" y="249" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,7 +77,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVV-q5-XYm">
-                                <rect key="frame" x="145" y="269" width="30" height="30"/>
+                                <rect key="frame" x="145" y="287" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Exit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -103,12 +103,62 @@
                                 <rect key="frame" x="156" y="390" width="9" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="hGh-kK-8Cv">
+                                <rect key="frame" x="32" y="20" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="nk3-mW-Bk6">
+                                <rect key="frame" x="136" y="20" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="y8P-Wa-2JU">
+                                <rect key="frame" x="247" y="20" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YellowMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ap6-tI-5lf">
+                                <rect key="frame" x="32" y="77" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YellowMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="7HL-pb-A0G">
+                                <rect key="frame" x="136" y="77" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="aPz-qF-Wkw">
+                                <rect key="frame" x="85" y="136" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="UD3-Uw-AJF">
+                                <rect key="frame" x="194" y="136" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="qek-D8-cKd">
+                                <rect key="frame" x="85" y="194" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="M4S-zt-3KI">
+                                <rect key="frame" x="194" y="194" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YellowMonster.png" translatesAutoresizingMaskIntoConstraints="NO" id="oqI-C2-8vW">
+                                <rect key="frame" x="247" y="77" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="Bullet" destination="OW4-za-hty" id="eUI-3G-y37"/>
                         <outlet property="Exit" destination="UVV-q5-XYm" id="UYl-pS-HcJ"/>
+                        <outlet property="Monster1" destination="hGh-kK-8Cv" id="afD-3x-uE2"/>
+                        <outlet property="Monster10" destination="M4S-zt-3KI" id="ZP1-jt-gq8"/>
+                        <outlet property="Monster2" destination="nk3-mW-Bk6" id="aCI-A2-qpQ"/>
+                        <outlet property="Monster3" destination="y8P-Wa-2JU" id="7Ir-EP-LQf"/>
+                        <outlet property="Monster4" destination="Ap6-tI-5lf" id="QGQ-0P-UZD"/>
+                        <outlet property="Monster5" destination="7HL-pb-A0G" id="Umd-Rg-VzF"/>
+                        <outlet property="Monster6" destination="oqI-C2-8vW" id="Wyp-bm-pMd"/>
+                        <outlet property="Monster7" destination="aPz-qF-Wkw" id="iBY-sC-0Tu"/>
+                        <outlet property="Monster8" destination="UD3-Uw-AJF" id="Y50-qT-LRN"/>
+                        <outlet property="Monster9" destination="qek-D8-cKd" id="tyo-Qr-WJ9"/>
                         <outlet property="Ship" destination="eEn-An-atu" id="qfR-aL-wyJ"/>
                         <outlet property="Shoot" destination="OHU-Bg-2lX" id="Rp7-rS-mbR"/>
                         <outlet property="Start" destination="d5z-CZ-ohO" id="zvf-N5-58P"/>
@@ -120,6 +170,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BlueMonster.png" width="200" height="200"/>
+        <image name="GreenMonster.png" width="200" height="200"/>
+        <image name="YellowMonster.png" width="200" height="200"/>
         <image name="bullet.png" width="100" height="200"/>
         <image name="mainMenu.png" width="320" height="480"/>
         <image name="ship.png" width="200" height="200"/>

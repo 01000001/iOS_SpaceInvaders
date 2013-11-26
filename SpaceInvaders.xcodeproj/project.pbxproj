@@ -21,10 +21,10 @@
 		EB4729801840E20800803B9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4729621840E20800803B9B /* UIKit.framework */; };
 		EB4729881840E20800803B9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB4729861840E20800803B9B /* InfoPlist.strings */; };
 		EB47298A1840E20800803B9B /* SpaceInvadersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4729891840E20800803B9B /* SpaceInvadersTests.m */; };
-		EB4729941840E23400803B9B /* 524458_625768010800765_1022557678_n.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4729931840E23400803B9B /* 524458_625768010800765_1022557678_n.png */; };
+		EB4729941840E23400803B9B /* GreenMonster.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4729931840E23400803B9B /* GreenMonster.png */; };
 		EB4729981840E24100803B9B /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4729951840E24100803B9B /* ship.png */; };
-		EB4729991840E24100803B9B /* 1184873_625768047467428_347659117_n.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4729961840E24100803B9B /* 1184873_625768047467428_347659117_n.png */; };
-		EB47299A1840E24100803B9B /* 1185239_625768017467431_1721834748_n.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4729971840E24100803B9B /* 1185239_625768017467431_1721834748_n.png */; };
+		EB4729991840E24100803B9B /* YellowMonster.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4729961840E24100803B9B /* YellowMonster.png */; };
+		EB47299A1840E24100803B9B /* BlueMonster.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4729971840E24100803B9B /* BlueMonster.png */; };
 		EB47299C1840E24E00803B9B /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = EB47299B1840E24E00803B9B /* bullet.png */; };
 		EB47299E1840E2C200803B9B /* mainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = EB47299D1840E2C200803B9B /* mainMenu.png */; };
 		EB4729A41840E4BE00803B9B /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4729A31840E4BE00803B9B /* GameViewController.m */; };
@@ -60,10 +60,10 @@
 		EB4729851840E20800803B9B /* SpaceInvadersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceInvadersTests-Info.plist"; sourceTree = "<group>"; };
 		EB4729871840E20800803B9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB4729891840E20800803B9B /* SpaceInvadersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceInvadersTests.m; sourceTree = "<group>"; };
-		EB4729931840E23400803B9B /* 524458_625768010800765_1022557678_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 524458_625768010800765_1022557678_n.png; sourceTree = "<group>"; };
+		EB4729931840E23400803B9B /* GreenMonster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenMonster.png; sourceTree = "<group>"; };
 		EB4729951840E24100803B9B /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
-		EB4729961840E24100803B9B /* 1184873_625768047467428_347659117_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1184873_625768047467428_347659117_n.png; sourceTree = "<group>"; };
-		EB4729971840E24100803B9B /* 1185239_625768017467431_1721834748_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1185239_625768017467431_1721834748_n.png; sourceTree = "<group>"; };
+		EB4729961840E24100803B9B /* YellowMonster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YellowMonster.png; sourceTree = "<group>"; };
+		EB4729971840E24100803B9B /* BlueMonster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueMonster.png; sourceTree = "<group>"; };
 		EB47299B1840E24E00803B9B /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		EB47299D1840E2C200803B9B /* mainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainMenu.png; sourceTree = "<group>"; };
 		EB4729A21840E4BE00803B9B /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../GameViewController.h; sourceTree = "<group>"; };
@@ -144,9 +144,9 @@
 				EB47299B1840E24E00803B9B /* bullet.png */,
 				EB47299D1840E2C200803B9B /* mainMenu.png */,
 				EB4729951840E24100803B9B /* ship.png */,
-				EB4729961840E24100803B9B /* 1184873_625768047467428_347659117_n.png */,
-				EB4729971840E24100803B9B /* 1185239_625768017467431_1721834748_n.png */,
-				EB4729931840E23400803B9B /* 524458_625768010800765_1022557678_n.png */,
+				EB4729961840E24100803B9B /* YellowMonster.png */,
+				EB4729971840E24100803B9B /* BlueMonster.png */,
+				EB4729931840E23400803B9B /* GreenMonster.png */,
 				EB47296D1840E20800803B9B /* AppDelegate.h */,
 				EB47296E1840E20800803B9B /* AppDelegate.m */,
 				EB4729661840E20800803B9B /* SpaceInvaders-Info.plist */,
@@ -253,9 +253,9 @@
 			files = (
 				EB47299C1840E24E00803B9B /* bullet.png in Resources */,
 				EB4729771840E20800803B9B /* Images.xcassets in Resources */,
-				EB4729941840E23400803B9B /* 524458_625768010800765_1022557678_n.png in Resources */,
-				EB4729991840E24100803B9B /* 1184873_625768047467428_347659117_n.png in Resources */,
-				EB47299A1840E24100803B9B /* 1185239_625768017467431_1721834748_n.png in Resources */,
+				EB4729941840E23400803B9B /* GreenMonster.png in Resources */,
+				EB4729991840E24100803B9B /* YellowMonster.png in Resources */,
+				EB47299A1840E24100803B9B /* BlueMonster.png in Resources */,
 				EB4729691840E20800803B9B /* InfoPlist.strings in Resources */,
 				EB47299E1840E2C200803B9B /* mainMenu.png in Resources */,
 				EB4729721840E20800803B9B /* Main.storyboard in Resources */,
@@ -490,6 +490,7 @@
 				EB47298F1840E20800803B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB4729901840E20800803B9B /* Build configuration list for PBXNativeTarget "SpaceInvadersTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +499,7 @@
 				EB4729921840E20800803B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
