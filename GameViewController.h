@@ -23,6 +23,11 @@ BOOL Monster8Hit;
 BOOL Monster9Hit;
 BOOL Monster10Hit;
 
+int MonsterMovement;
+
+int LeftSide = 15;
+int RightSide = 285;
+
 @interface GameViewController : UIViewController
 {
     IBOutlet UIButton *Start;
@@ -50,8 +55,10 @@ BOOL Monster10Hit;
 -(IBAction)Start:(id)sender;
 -(IBAction)Shoot:(id)sender;
 -(void)Movement;
-
 -(void)Collision;
 -(void)MonsterKilled;
+
+-(void)MonsterMoveDown;
+
 
 @end
