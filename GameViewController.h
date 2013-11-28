@@ -28,6 +28,8 @@ int MonsterMovement;
 int LeftSide = 15;
 int RightSide = 285;
 
+int MonsterShooterStart;
+
 @interface GameViewController : UIViewController
 {
     IBOutlet UIButton *Start;
@@ -48,6 +50,12 @@ int RightSide = 285;
     IBOutlet UIImageView *Monster9;
     IBOutlet UIImageView *Monster10;
     
+    IBOutlet UIImageView *MonsterBullet;
+    IBOutlet UIImageView *MonsterBullet2;
+    IBOutlet UIImageView *MonsterBullet3;
+    
+    IBOutlet UILabel *WinOrLose;
+    
     NSTimer *MovementTimer;
     
 }
@@ -59,6 +67,8 @@ int RightSide = 285;
 -(void)MonsterKilled;
 
 -(void)MonsterMoveDown;
+
+-(void)GameOver;
 
 
 @end

@@ -85,9 +85,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" id="eh3-Qq-Org"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHU-Bg-2lX">
-                                <rect key="frame" x="141" y="325" width="41" height="30"/>
+                                <rect key="frame" x="140" y="352" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Shoot">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,6 +148,25 @@
                                 <rect key="frame" x="247" y="77" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="dfD-fN-OLy">
+                                <rect key="frame" x="85" y="5" width="9" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="REm-u1-Z0l">
+                                <rect key="frame" x="120" y="0.0" width="9" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bullet.png" translatesAutoresizingMaskIntoConstraints="NO" id="7a5-dm-XDl">
+                                <rect key="frame" x="154" y="0.0" width="9" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Lose!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVk-kF-W5L">
+                                <rect key="frame" x="11" y="318" width="297" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -161,14 +183,18 @@
                         <outlet property="Monster7" destination="aPz-qF-Wkw" id="iBY-sC-0Tu"/>
                         <outlet property="Monster8" destination="UD3-Uw-AJF" id="Y50-qT-LRN"/>
                         <outlet property="Monster9" destination="qek-D8-cKd" id="tyo-Qr-WJ9"/>
+                        <outlet property="MonsterBullet" destination="dfD-fN-OLy" id="700-MW-gZQ"/>
+                        <outlet property="MonsterBullet2" destination="REm-u1-Z0l" id="gVG-CK-YA9"/>
+                        <outlet property="MonsterBullet3" destination="7a5-dm-XDl" id="T1T-1c-7KF"/>
                         <outlet property="Ship" destination="eEn-An-atu" id="qfR-aL-wyJ"/>
                         <outlet property="Shoot" destination="OHU-Bg-2lX" id="Rp7-rS-mbR"/>
                         <outlet property="Start" destination="d5z-CZ-ohO" id="zvf-N5-58P"/>
+                        <outlet property="WinOrLose" destination="cVk-kF-W5L" id="lhz-eV-VuO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Kb-P4-RDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1176" y="42"/>
+            <point key="canvasLocation" x="1163" y="42"/>
         </scene>
     </scenes>
     <resources>

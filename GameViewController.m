@@ -24,10 +24,68 @@
     // move Bullet out of the way
     Bullet.center = CGPointMake(200, 564);
     
+    if (MonstersKilled == 10) {
+        WinOrLose.hidden = NO;
+        WinOrLose.text = [NSString stringWithFormat:@"You win!"];
+        Ship.hidden = YES;
+        Shoot.hidden = YES;
+        Exit.hidden = NO;
+        MonsterBullet.hidden = YES;
+        MonsterBullet2.hidden = YES;
+        MonsterBullet3.hidden = YES;
+        [MovementTimer invalidate];
+        
+    }
+    
     
 }
 
 -(void)Collision{
+    
+    if (CGRectIntersectsRect(MonsterBullet.frame, Ship.frame)) {
+        [self GameOver];
+    }
+    
+    if (CGRectIntersectsRect(MonsterBullet2.frame, Ship.frame)) {
+        [self GameOver];
+    }
+    
+    if (CGRectIntersectsRect(MonsterBullet3.frame, Ship.frame)) {
+        [self GameOver];
+    }
+    
+    if (CGRectIntersectsRect(Monster1.frame, Ship.frame) && (Monster1Hit == NO)) {
+        [self GameOver];
+    }
+    if (CGRectIntersectsRect(Monster2.frame, Ship.frame) && (Monster2Hit == NO)) {
+        [self GameOver];
+    }
+    
+    if (CGRectIntersectsRect(Monster3.frame, Ship.frame) && (Monster3Hit == NO)) {
+        [self GameOver];
+    }
+    if (CGRectIntersectsRect(Monster4.frame, Ship.frame) && (Monster4Hit == NO)) {
+        [self GameOver];
+    }
+    if (CGRectIntersectsRect(Monster5.frame, Ship.frame) && (Monster5Hit == NO)) {
+        [self GameOver];
+    }
+    if (CGRectIntersectsRect(Monster6.frame, Ship.frame) && (Monster6Hit == NO)) {
+        [self GameOver];
+    }
+    if (CGRectIntersectsRect(Monster7.frame, Ship.frame) && (Monster7Hit == NO)) {
+        [self GameOver];
+    }
+    if (CGRectIntersectsRect(Monster8.frame, Ship.frame) && (Monster8Hit == NO)) {
+        [self GameOver];
+    }
+    if (CGRectIntersectsRect(Monster9.frame, Ship.frame) && (Monster9Hit == NO)) {
+        [self GameOver];
+    }
+    if (CGRectIntersectsRect(Monster10.frame, Ship.frame) && (Monster10Hit == NO)) {
+        [self GameOver];
+    }
+    
     
     if ((CGRectIntersectsRect(Bullet.frame, Monster1.frame)) && (Monster1Hit == NO)) {
         
@@ -168,6 +226,25 @@
     Monster9.center = CGPointMake(Monster9.center.x + MonsterMovement, Monster9.center.y);
     Monster10.center = CGPointMake(Monster10.center.x + MonsterMovement, Monster10.center.y);
     
+    MonsterBullet.center = CGPointMake(MonsterBullet.center.x, MonsterBullet.center.y + 10);
+    MonsterBullet2.center = CGPointMake(MonsterBullet2.center.x, MonsterBullet2.center.y + 10);
+    MonsterBullet3.center = CGPointMake(MonsterBullet3.center.x, MonsterBullet3.center.y + 10);
+    
+    
+    if (MonsterBullet.center.y > 474) {
+        MonsterShooterStart = arc4random() % 315;
+        MonsterBullet.center = CGPointMake(MonsterShooterStart, 0);
+    }
+    
+    if (MonsterBullet2.center.y > 474) {
+        MonsterShooterStart = arc4random() % 315;
+        MonsterBullet2.center = CGPointMake(MonsterShooterStart, 0);
+    }
+    
+    if (MonsterBullet3.center.y > 474) {
+        MonsterShooterStart = arc4random() % 315;
+        MonsterBullet3.center = CGPointMake(MonsterShooterStart, 0);
+    }
     
     
     if (Bullet.center.y < 0) {
@@ -316,8 +393,21 @@
     Monster9.hidden = NO;
     Monster10.hidden = NO;
     
+    MonsterBullet.hidden = NO;
+    MonsterBullet2.hidden = NO;
+    MonsterBullet3.hidden = NO;
+    
     // every 0.05 second it is going to run the code we call movement
     MovementTimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(Movement) userInfo:nil repeats:YES];
+    
+    MonsterShooterStart = arc4random() % 315;
+    MonsterBullet.center = CGPointMake(MonsterShooterStart, 0);
+    
+    MonsterShooterStart = arc4random() % 315;
+    MonsterBullet2.center = CGPointMake(MonsterShooterStart, -150);
+    
+    MonsterShooterStart = arc4random() % 315;
+    MonsterBullet3.center = CGPointMake(MonsterShooterStart, -300);
     
 }
 
@@ -360,8 +450,43 @@
     
     MonsterMovement = 5;
     
+    MonsterBullet.hidden = YES;
+    MonsterBullet2.hidden = YES;
+    MonsterBullet3.hidden = YES;
+    
+    WinOrLose.hidden = YES;
+    MonstersKilled = 0;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+}
+
+-(void)GameOver{
+    
+    WinOrLose.hidden = NO;
+    
+    WinOrLose.text = [NSString stringWithFormat:@"You lose!"];
+    Monster1.hidden = YES;
+    Monster2.hidden = YES;
+    Monster3.hidden = YES;
+    Monster4.hidden = YES;
+    Monster5.hidden = YES;
+    Monster6.hidden = YES;
+    Monster7.hidden = YES;
+    Monster8.hidden = YES;
+    Monster9.hidden = YES;
+    Monster10.hidden = YES;
+    
+    Shoot.hidden = YES;
+    Bullet.hidden = YES;
+    MonsterBullet.hidden = YES;
+    MonsterBullet2.hidden = YES;
+    MonsterBullet3.hidden = YES;
+    Shoot.hidden = YES;
+    Exit.hidden = NO;
+    [MovementTimer invalidate];
+    
     
 }
 
